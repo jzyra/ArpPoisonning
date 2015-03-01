@@ -22,9 +22,3 @@ NetworkUtilities.o: NetworkUtilities.cpp
 
 Packet.o: Packet.cpp
 	$(CXX) -o Packet.o -c Packet.cpp $(CXXFLAGS) $(LDFLAGS)
-
-clean:
-	rm -rf *.o
-
-mrproper: clean
-	rm -rf $(EXEC)
