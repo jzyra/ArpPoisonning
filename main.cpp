@@ -68,9 +68,9 @@ int main(int argc, char *argv[]) {
 	else {
 		//Check mandatory parameters
 		if (iface != NULL && target != NULL && destination != NULL) {
-			ArpSpoofing *launch = new ArpSpoofing(iface, target, destination);
+			ArpSpoofing launch(iface, target, destination);
 			//Run MITM attack
-			launch->run();
+			launch.run();
 		} else {
 			printUsage(argv[0]);
 		}
