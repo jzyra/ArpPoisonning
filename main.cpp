@@ -49,7 +49,7 @@ int main(int argc, char *argv[]) {
 				break;
 			//Target IP
 			case 't':
-				target = optarg;;
+				target = optarg;
 				break;
 			//IP hijacked
 			case 'd':
