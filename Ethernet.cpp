@@ -15,6 +15,10 @@ Ethernet::Ethernet(pcap_t *device) : Packet(device) {
 	_ethernet->ether_type = 0x00;
 }
 
+Ethernet::~Ethernet() {
+	delete _ethernet;
+}
+
 ucharMac Ethernet::getSrcMac() {
 	ucharMac mac;	
 	for (int i = 0; i<6; ++i) {

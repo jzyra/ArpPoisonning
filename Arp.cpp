@@ -25,6 +25,10 @@ Arp::Arp(pcap_t *device) : Ethernet(device) {
 	_ethernet->ether_type = 0x608;
 }
 
+Arp::~Arp() {
+	delete _arp;
+}
+
 ucharMac Arp::getSrcArpMac() {
 	ucharMac mac;	
 	for (int i = 0; i<6; ++i) {

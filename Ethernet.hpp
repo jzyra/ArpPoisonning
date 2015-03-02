@@ -27,6 +27,11 @@ class Ethernet : public Packet {
 	*/
 	Ethernet(pcap_t *device);
 	/*!
+		* \brief Ethernet Destructor.
+		Ethernet class's destructor.
+	*/
+	~Ethernet();
+	/*!
 		* \brief Accessor on source mac.
 		* \return Return MAC address.
 	*/

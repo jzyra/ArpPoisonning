@@ -28,6 +28,11 @@ class Arp : public Ethernet {
 	*/
 	Arp(pcap_t *device);
 	/*!
+		* \brief Arp Destructor.
+		Arp class's destructor.
+	*/
+	~Arp();
+	/*!
 		* \brief Accessor on source mac.
 		* \return Return MAC address.
 	*/
