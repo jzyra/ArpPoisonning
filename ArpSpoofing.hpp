@@ -48,7 +48,6 @@ class ArpSpoofing {
 	uint8Ip _destIp;
 	uint8Ip _deviceIp;
 	ucharMac _deviceMac;
-	char *_ifaceName;
 };
 
 #endif
