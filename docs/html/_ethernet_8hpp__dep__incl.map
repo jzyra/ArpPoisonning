@@ -1,8 +1,0 @@
-<map id="Ethernet.hpp" name="Ethernet.hpp">
-<area shape="rect" id="node2" href="$_arp_8hpp.html" title="Class header for build ARP packet. " alt="" coords="64,80,131,107"/>
-<area shape="rect" id="node7" href="$_ethernet_8cpp.html" title="Class for build Ethernet packet. " alt="" coords="155,80,251,107"/>
-<area shape="rect" id="node3" href="$_arp_8cpp.html" title="Class for build ARP packet. " alt="" coords="5,155,72,181"/>
-<area shape="rect" id="node4" href="$_arp_spoofing_8hpp.html" title="Class header for run MITM attack. " alt="" coords="97,155,215,181"/>
-<area shape="rect" id="node5" href="$_arp_spoofing_8cpp.html" title="Class for run MITM attack. " alt="" coords="37,229,155,256"/>
-<area shape="rect" id="node6" href="$main_8cpp.html" title="Program&#39;s entry point. " alt="" coords="179,229,252,256"/>
-</map>

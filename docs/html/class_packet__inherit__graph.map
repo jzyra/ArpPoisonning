@@ -1,4 +1,0 @@
-<map id="Packet" name="Packet">
-<area shape="rect" id="node2" href="$class_ethernet.html" title="Class header for build Ethernet packet. " alt="" coords="5,80,75,107"/>
-<area shape="rect" id="node3" href="$class_arp.html" title="Class header for build ARP packet. " alt="" coords="19,155,61,181"/>
-</map>

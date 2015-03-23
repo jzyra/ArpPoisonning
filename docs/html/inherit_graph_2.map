@@ -1,5 +1,0 @@
-<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$class_packet.html" title="Class header for build network packet. " alt="" coords="6,5,69,32"/>
-<area shape="rect" id="node2" href="$class_ethernet.html" title="Class header for build Ethernet packet. " alt="" coords="118,5,189,32"/>
-<area shape="rect" id="node3" href="$class_arp.html" title="Class header for build ARP packet. " alt="" coords="237,5,280,32"/>
-</map>
