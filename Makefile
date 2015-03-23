@@ -6,7 +6,7 @@ EXEC=arppoisonning
 all: $(EXEC)
 
 arppoisonning: Arp.o ArpSpoofing.o Ethernet.o NetworkUtilities.o Packet.o
-	$(CXX) -o arppoisonning Arp.o ArpSpoofing.o Ethernet.o NetworkUtilities.o Packet.o main.cpp $(LDFLAGS)
+	$(CXX) -o arppoisonning Arp.o ArpSpoofing.o Ethernet.o NetworkUtilities.o Packet.o main.cpp $(CXXFLAGS) $(LDFLAGS)
 
 Arp.o: Arp.cpp
 	$(CXX) -o Arp.o -c Arp.cpp $(CXXFLAGS) $(LDFLAGS)
@@ -22,3 +22,9 @@ NetworkUtilities.o: NetworkUtilities.cpp
 
 Packet.o: Packet.cpp
 	$(CXX) -o Packet.o -c Packet.cpp $(CXXFLAGS) $(LDFLAGS)
+
+clean:
+	rm -rf *.o
+
+mrproper: clean
+	rm -rf $(EXEC)
