@@ -4,8 +4,7 @@ This tool can't modifie static entries in target's ARP cache.
 
 #Build
 
-For build this tool for Linux :
-You must install libpcap-dev
+For build this tool for Linux, you must install libpcap-dev
 
     sudo apt-get install libpcap-dev
 
