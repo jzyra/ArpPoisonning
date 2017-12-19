@@ -62,6 +62,7 @@ void ArpSpoofing::run() {
 			}
 			sleep(TIME_SLEEP);
 		}
+		delete targetMac;
 	} else {
 		cerr << "[-] Error: Can't find target's MAC adress." << endl;
 		exit(1);
@@ -84,13 +85,13 @@ ucharMac *ArpSpoofing::getTargetMac() {
 	request.setSrcMac(_deviceMac);
 	request.setDstMac(broadcast);
 	//Request ARP request.
-	request.setOp(0x0100);
+	request.setOp(ntohs(1));
 	request.setSrcArpMac(_deviceMac);
 	request.setSrcIp(_deviceIp);
 	request.setDstIp(_targetIp);
 	request.send();
 	//Comile pcap filter for get next arp reply.
-	pcap_compile(_iface, &fp, "arp", 0x100, PCAP_NETMASK_UNKNOWN);
+	pcap_compile(_iface, &fp, "arp", ntohs(1), PCAP_NETMASK_UNKNOWN);
 	pcap_setfilter(_iface, &fp);
 	//Get reply with target's MAC adress.
 	packet = pcap_next(_iface, &header);
