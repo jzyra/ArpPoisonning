@@ -85,13 +85,13 @@ ucharMac *ArpSpoofing::getTargetMac() {
 	request.setSrcMac(_deviceMac);
 	request.setDstMac(broadcast);
 	//Request ARP request.
-	request.setOp(ntohs(1));
+	request.setOp(0x0100);
 	request.setSrcArpMac(_deviceMac);
 	request.setSrcIp(_deviceIp);
 	request.setDstIp(_targetIp);
 	request.send();
 	//Comile pcap filter for get next arp reply.
-	pcap_compile(_iface, &fp, "arp", ntohs(1), PCAP_NETMASK_UNKNOWN);
+	pcap_compile(_iface, &fp, "arp", 0x100, PCAP_NETMASK_UNKNOWN);
 	pcap_setfilter(_iface, &fp);
 	//Get reply with target's MAC adress.
 	packet = pcap_next(_iface, &header);
